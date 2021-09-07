@@ -1,0 +1,103 @@
+.divider {
+    &__img {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        margin-bottom: 25px;
+    }
+
+    &__img-icon {
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        margin-bottom: 20px;
+    }
+
+    &__img,
+    &__img-icon {
+
+        &.left {
+            margin-right: auto;
+        }
+
+        &.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &.right {
+            margin-left: auto;
+        }
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        max-width: 44px;
+        max-height: 44px;
+        background: $blue-gray-2;
+        color: $white;
+        font-size: $fs22;
+        line-height: $lh30;
+        font-family: $Bold;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+        &.white {
+            background: $white;
+            color: $blue-gray-2;
+        }
+    }
+
+    .divider__line {
+        height: 1px;
+        background: rgba(0, 0, 0, .1);
+        margin: 20px 0;
+
+        &--item {
+            margin: 0 0 20px;
+            color: #000;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-image: linear-gradient(to left, rgba(0, 0, 0, .1) 80%, $Main 20%) 1 1;
+        }
+    }
+
+    @media (max-width: 719px) {
+        &.row-wrap-xs {
+            display: flex;
+            align-items:center;
+
+            & .divider__img {
+                margin: 0 20px 0 0;
+            }
+
+            & .divider__img-icon {
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+
+    &.row-wrap {
+        display: flex;
+        align-items:center;
+
+        & .divider__img {
+            margin: 0 20px 0 0;
+        }
+
+        & .divider__img-icon {
+            margin: 0 20px 0 0;
+        }
+    }
+
+}

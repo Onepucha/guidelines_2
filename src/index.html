@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'guideline',
+'description': '',
+'keywords': '',
+'favicon': 'images/favicon.ico'
+})
+
+<body>
+	@@include('components/page/_2_header.html')
+	@@include('components/page/_5_nav.html')
+	<main class="main mt-blue">
+		<div class="grid">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1 mb-yellow">Результаты тестирования</h1>
+					<div class="text text-s text-gray-1 mb-pink"><span class="user-name pr-10 pr-xs-10">Константин
+							Константинопольский</span> <span class="date">20.01.2020</span></div>
+					<div class="row  mb-yellow">
+						<div class="col-lg-24 col-xs-12">
+							<div class="panel bg-gray-5 text-center">
+								<div class="text text-s text-gray-2 mb-5">Результаты <span
+										class="current-test-cont">1</span>-й
+									попытки</div>
+								<h2 class="h2 text-blue">
+									<span class="test-score">8</span>/<span class="test-cont pr-20 pr-xs-15">10</span>
+									<span class="current-percent">86%</span>
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-yellow">
+						<div class="col-lg-12 col-xs-6">
+							<div class="panel bg-gray-5 text-center">
+								<div class="text text-s text-gray-2 mb-5">Результаты <span
+										class="current-test-cont">1</span>-й попытки</div>
+								<h2 class="h2 text-blue">
+									<span class="test-score">8</span>/<span class="test-cont pr-20 pr-xs-15">10</span>
+									<span class="current-percent">86%</span>
+								</h2>
+							</div>
+						</div>
+						<div class="col-lg-12 col-xs-6">
+							<div class="panel bg-gray-5 text-center text-gray-2">
+								<div class="text text-s mb-5">Лучший результыт</div>
+								<h2 class="h2">
+									<span class="best-percent">100%</span>
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-green">
+						<div class="col-lg-24 col-xs-12">
+							<div class="text text-l">Не очень хороший результат, рекомендуем изучить курс еще раз.</div>
+						</div>
+					</div>
+					<div class="row center">
+						<div class="col-lg-24 col-xs-12">
+							<button class="btn btn__primary large btn__block--xs js-next">К заключению
+							</button>
+							<button class="btn btn__default large btn__block--xs"
+								onclick="EventBus.$emit('reset-assessment');gotoFrame('FRAME_34', event);">
+								Повторить тестирование
+								<svg class="reload" width="26" height="20" viewBox="0 0 26 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13 1.53846C15.6579 1.53846 18.0329 2.73615 19.6028 4.61538H21.5252C19.7277 1.83976 16.5812 0 13 0C7.51963 0 3.05718 4.30853 2.88948 9.68615L1.10041 7.91749L0 9.00535L3.66264 12.6262L7.32528 9.00535L6.22487 7.91749L4.447 9.67508C4.61973 5.15248 8.38294 1.53846 13 1.53846Z"
+										fill="white" />
+									<path
+										d="M6.39746 15.3846H4.475C6.27254 18.1602 9.41906 20 13.0002 20C18.4805 20 22.9429 15.6916 23.1108 10.3141L24.8996 12.0825L26 10.9946L22.3374 7.3738L18.6747 10.9946L19.7751 12.0825L21.5532 10.3247C21.3807 14.8474 17.6174 18.4615 13.0002 18.4615C10.3423 18.4615 7.96736 17.2639 6.39746 15.3846Z"
+										fill="white" />
+								</svg>
+
+							</button>
+							<button class="btn btn__primary large btn__block--xs js-next">К заключению
+							</button>
+							<button class="btn btn__default large btn__block--xs mb-xs-25"
+								onclick="EventBus.$emit('reset-assessment');gotoFrame('FRAME_34', event);">
+								Повторить тестирование
+								<svg class="reload" width="26" height="20" viewBox="0 0 26 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13 1.53846C15.6579 1.53846 18.0329 2.73615 19.6028 4.61538H21.5252C19.7277 1.83976 16.5812 0 13 0C7.51963 0 3.05718 4.30853 2.88948 9.68615L1.10041 7.91749L0 9.00535L3.66264 12.6262L7.32528 9.00535L6.22487 7.91749L4.447 9.67508C4.61973 5.15248 8.38294 1.53846 13 1.53846Z"
+										fill="white" />
+									<path
+										d="M6.39746 15.3846H4.475C6.27254 18.1602 9.41906 20 13.0002 20C18.4805 20 22.9429 15.6916 23.1108 10.3141L24.8996 12.0825L26 10.9946L22.3374 7.3738L18.6747 10.9946L19.7751 12.0825L21.5532 10.3247C21.3807 14.8474 17.6174 18.4615 13.0002 18.4615C10.3423 18.4615 7.96736 17.2639 6.39746 15.3846Z"
+										fill="white" />
+								</svg>
+
+							</button>
+							<button class="btn btn__primary large btn__block--xs"
+								onclick="EventBus.$emit('reset-assessment');gotoFrame('FRAME_10', event);">
+								Повторить курс
+								<svg class="reload" width="26" height="20" viewBox="0 0 26 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13 1.53846C15.6579 1.53846 18.0329 2.73615 19.6028 4.61538H21.5252C19.7277 1.83976 16.5812 0 13 0C7.51963 0 3.05718 4.30853 2.88948 9.68615L1.10041 7.91749L0 9.00535L3.66264 12.6262L7.32528 9.00535L6.22487 7.91749L4.447 9.67508C4.61973 5.15248 8.38294 1.53846 13 1.53846Z"
+										fill="white" />
+									<path
+										d="M6.39746 15.3846H4.475C6.27254 18.1602 9.41906 20 13.0002 20C18.4805 20 22.9429 15.6916 23.1108 10.3141L24.8996 12.0825L26 10.9946L22.3374 7.3738L18.6747 10.9946L19.7751 12.0825L21.5532 10.3247C21.3807 14.8474 17.6174 18.4615 13.0002 18.4615C10.3423 18.4615 7.96736 17.2639 6.39746 15.3846Z"
+										fill="white" />
+								</svg>
+
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="grid">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1 mb-yellow">Тестирование</h1>
+					<div class="text text-m mb-yellow">Осталось пройти небольшой тест, который покажет, как хорошо ты
+						усвоил материал</div>
+					<div class="blockquote mb-green">
+						<div class="blockquote__content choose">
+							<ul class="list list__ul text text-m text-gray-1">
+								<li class="list__ul--dash">Для его успешного прохождения нужно правильно ответить
+									минимум на 9 вопросов из 10.</li>
+								<li class="list__ul--dash">На прохождение теста дается 3 попытки.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-blue btn__bottom">
+						<div class="col-lg-24 col-xs-12">
+							<button class="btn btn__next js-next">Начать
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+									fill="none">
+									<path
+										d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z"
+										fill="white" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="grid mb-blue mt-blue">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<div class="lmm-answers__question_count">
+						<div class="text text__xl text-blue mb-pink">
+							Вопрос 1<span>/3</span></div>
+					</div>
+					<div class="lmm-answers__question-single">
+						<p class="text text__xl mb-pink">В каких акциях может участвовать ЮЛ?</p>
+						<div class="blockquote mb-cyan">
+							<div class="blockquote__content choose">
+								<div class="text-xs">Выбери несколько ответов</div>
+							</div>
+						</div>
+						<div class="lmm-answers__q_var">
+							<div class="border-top border-light-gray checkbox s__item"><input name="1"
+									id="Акции со снижением цены." type="checkbox" class="checkbox s"> <label
+									for="Акции со снижением цены." class="checkbox text text__l s__label">Акции со
+									снижением цены.</label></div>
+							<div class="border-top border-light-gray checkbox s__item"><input name="1" id="Кэш-бэк."
+									type="checkbox" class="checkbox s"> <label for="Кэш-бэк."
+									class="checkbox text text__l s__label">Кэш-бэк.</label></div>
+							<div class="border-top border-light-gray checkbox s__item"><input name="1"
+									id="Акции с механикой «подарок» (если стоимость подарка не является символической)."
+									type="checkbox" class="checkbox s"> <label
+									for="Акции с механикой «подарок» (если стоимость подарка не является символической)."
+									class="checkbox text text__l s__label">Акции с механикой «подарок» (если стоимость
+									подарка не является символической).</label></div>
+							<div class="border-top border-light-gray checkbox s__item"><input name="1"
+									id="Акция «трейд-ин»." type="checkbox" class="checkbox s"> <label
+									for="Акция «трейд-ин»." class="checkbox text text__l s__label">Акция
+									«трейд-ин».</label></div>
+							<div class="border-top border-light-gray checkbox s__item"><input name="1"
+									id="Двойные бонусы." type="checkbox" class="checkbox s"> <label
+									for="Двойные бонусы." class="checkbox text text__l s__label">Двойные бонусы.</label>
+							</div>
+							<div class="border-top border-light-gray checkbox s__item border-bottom"><input name="1"
+									id="Акции «комплект»." type="checkbox" class="checkbox s"> <label
+									for="Акции «комплект»." class="checkbox text text__l s__label">Акции
+									«комплект».</label></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid mb-blue">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<div class="lmm-answers__question_count">
+						<div class="text text__xl text-blue mb-pink">
+							Вопрос 2<span>/3</span></div>
+					</div>
+					<div class="lmm-answers__question-single">
+						<p class="text text__xl mb-pink">В каком формате необходимо вносить контактные данные клиента
+							при
+							выставлении счета?</p>
+						<div class="blockquote mb-cyan">
+							<div class="blockquote__content choose">
+								<div class="text-xs">Выбери один ответ</div>
+							</div>
+						</div>
+						<div class="lmm-answers__q_var">
+							<div class="border-top border-light-gray radiobox s__item"><input
+									id="ФИО полностью, телефон моб./стационарный + код города, адрес сайта организации."
+									name="radio-box-group" type="radio" class="radiobox s"> <label
+									for="ФИО полностью, телефон моб./стационарный + код города, адрес сайта организации."
+									class="radiobox text text__l s__label">ФИО полностью, телефон моб./стационарный +
+									код города, адрес сайта организации.</label></div>
+							<div class="border-top border-light-gray radiobox s__item"><input
+									id="Имя, должность, телефон, сайт компании." name="radio-box-group" type="radio"
+									class="radiobox s"> <label for="Имя, должность, телефон, сайт компании."
+									class="radiobox text text__l s__label">Имя, должность, телефон, сайт
+									компании.</label></div>
+							<div class="border-top border-light-gray radiobox s__item"><input
+									id="ФИО полностью, телефон моб./стационарный + код города, электронная почта."
+									name="radio-box-group" type="radio" class="radiobox s"> <label
+									for="ФИО полностью, телефон моб./стационарный + код города, электронная почта."
+									class="radiobox text text__l s__label">ФИО полностью, телефон моб./стационарный +
+									код города, электронная почта.</label></div>
+							<div class="border-top border-light-gray radiobox s__item border-bottom"><input
+									id="Фамилия и инициалы, телефон моб./стационарный + код города, электронная почта."
+									name="radio-box-group" type="radio" class="radiobox s"> <label
+									for="Фамилия и инициалы, телефон моб./стационарный + код города, электронная почта."
+									class="radiobox text text__l s__label">Фамилия и инициалы, телефон моб./стационарный
+									+ код города, электронная почта.</label></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid mb-blue">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<div>
+						<div class="lmm-answers__question_count">
+							<div v-show="questionNumberShow" class="text text__xl text-blue mb-pink">
+								Вопрос 3<span>/3</span>
+							</div>
+						</div>
+						<div class="lmm-answers__question-single">
+							<p class="text text__xl mb-pink">Расставьте действия в экстренной ситуации в правильном
+								порядке.
+							</p>
+							<div class="blockquote mb-cyan">
+								<div class="blockquote__content choose">
+									<div class="text-xs">Соотвнесите верно левую часть с правой. Для этого
+										перетаскивайте блоки справа на нужные позиции.</div>
+								</div>
+							</div>
+							<div class="lmm-answers__q_var">
+								<div class="row">
+									<div class="col-lg-24 col-xs-12">
+										<div class="row">
+											<div class="col-lg-12 col-xs-6">
+												<div class="list-answers">
+													<div class="auto_height" style="height: 40px;">
+														<div class="list-group-title">a large iron or steel beam or
+															compound
+															structure used for building bridges and the framework of
+															large
+															buildings.</div>
+													</div>
+													<div class="auto_height" style="height: 40px;">
+														<div class="list-group-title">a large iron or steel beam or
+															compound
+															structure used for building bridges and the framework of
+															large
+															buildings.</div>
+													</div>
+													<div class="auto_height" style="height: 40px;">
+														<div class="list-group-title">a large iron or steel beam or
+															compound
+															structure used for building bridges and the framework of
+															large
+															buildings.</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-xs-6">
+												<ul class="list-group ranging"><span>
+														<li class="list-group-item"><i aria-hidden="true"
+																class="glyphicon glyphicon-pushpin"></i>
+															a large iron or steel beam or compound structure used for
+															building bridges and the framework of large buildings.1
+														</li>
+														<li class="list-group-item"><i aria-hidden="true"
+																class="glyphicon glyphicon-pushpin"></i>
+															a large iron or steel beam or compound structure used for
+															building bridges and the framework of large buildings.2
+														</li>
+														<li class="list-group-item"><i aria-hidden="true"
+																class="glyphicon glyphicon-pushpin"></i>
+															a large iron or steel beam or compound structure used for
+															building bridges and the framework of large buildings.3
+														</li>
+													</span></ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lmm-answers__accept btn__bottom mt-red">
+							<button class="btn btn__next">Принять
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+									fill="none">
+									<path
+										d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z"
+										fill="white" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid mb-blue">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1 mb-yellow">Цели курса</h1>
+					<h3 class="h3 mb-yellow">Добро пожаловать в курс «Продажи корпоративным клиентам»!</h3>
+					<h5 class="h5 mb-pink">Пройдя этот курс, ты узнаешь:</h5>
+					<ul class="list list__ul text text-m text-gray-1">
+						<li class="list__ul--dash">кто такие корпоративные клиенты и какие они бывают;</li>
+						<li class="list__ul--dash">как действовать, когда к тебе обратился представитель юридического
+							лица;</li>
+						<li class="list__ul--dash">сколько можно заработать на корпоративных продажах;</li>
+						<li class="list__ul--dash">какие документы нужно оформлять при выдаче товара юридическому лицу;
+						</li>
+						<li class="list__ul--dash">каков механизм продажи товара корпоративному клиенту;</li>
+						<li class="list__ul--dash">в каких акциях участвуют корпоративные клиенты;</li>
+						<li class="list__ul--dash">как действовать при запросе скидки;</li>
+						<li class="list__ul--dash">какие выгоды для корпоративных клиентов предлагает «Эльдорадо».</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mb-red dialog">
+				<div class="col-lg-12 col-xs-4">
+					<div class="pers pers__1--1"></div>
+				</div>
+				<div class="col-lg-10 col-xs-8">
+					<div class="speech left__bottom">
+						<div class="text text-m">Будь внимателен. Для завершения курса необходимо просмотреть все его
+							экраны и пройти итоговое тестирование.</div>
+						<div class="text text-m">Желаем удачи!</div>
+					</div>
+				</div>
+				<div class="col-lg-2 hide-xs">&nbsp;</div>
+			</div>
+			<div class="row mb-red btn__bottom">
+				<div class="col-lg-24 col-xs-9">
+					<button class="btn btn__next">Продолжить
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+							<path
+								d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z"
+								fill="white" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid mb-blue">
+			<div class="row mb-15 mb-xs-15">
+				<div class="col-lg-24 col-xs-12">
+					<h3 class="h3">Заголовок экрана эссе и оценки</h3>
+					<div class="text-m mt-cyan">Мы хотим повысить качество наших курсов, помоги нам в этом.</div>
+					<div class="text-m">Насколько полезной оказалась информация курса?</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<fieldset class="rating margin__yellow">
+						<div class="rating__group">
+							<input checked="checked" class="rating__input" id="health-1" name="health" type="radio"
+								value="1" /> <label aria-label="Ужасно" class="rating__star"
+								for="health-1">&nbsp;</label>
+							<input class="rating__input" id="health-2" name="health" type="radio" value="2" /> <label
+								aria-label="Сносно" class="rating__star" for="health-2">&nbsp;</label>
+							<input class="rating__input" id="health-3" name="health" type="radio" value="3" /> <label
+								aria-label="Нормально" class="rating__star" for="health-3">&nbsp;</label>
+							<input class="rating__input" id="health-4" name="health" type="radio" value="4" /> <label
+								aria-label="Хорошо" class="rating__star" for="health-4">&nbsp;</label>
+							<input class="rating__input" id="health-5" name="health" type="radio" value="5" /> <label
+								aria-label="Отлично" class="rating__star" for="health-5">&nbsp;</label>
+							<div class="rating__focus">&nbsp;
+							</div>
+						</div>
+					</fieldset>
+					<div class="text-m mb-20 mb-xs-20">Описание требовний к эссе</div>
+					<div class="lmm-input__textarea-wrapper"><textarea class="lmm-input__textarea" id="feedback-text"
+							maxlength="500" placeholder="Текст комментария" required="required"></textarea>
+					</div>
+					<div class="btn__bottom">
+						<button class="btn btn__next" id="feedback-btn" name="acceptBtn" type="button">Отправить и
+							прейти к заключению
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+								fill="none">
+								<path
+									d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z"
+									fill="white" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- guideline-grid full -->
+		<div class="grid mb-red mt-blue">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">guideline-grid (Concept full)</h1>
+				</div>
+			</div>
+		</div>
+		<div class="grid guideline-grid mb-blue">
+			<!-- 1 блок -->
+			<div class="row text-center">
+				<div class=" col col-lg-24 col-xs-12">
+					<p class="text text-l">100%</p>
+				</div>
+			</div>
+			<!-- 2 блока -->
+			<div class="row text-center">
+				<div class="col col-lg-12 col-xs-6">
+					<p class="text text-l">50%</p>
+				</div>
+				<div class="col col-lg-12 col-xs-6">
+					<p class="text text-l">50%</p>
+				</div>
+			</div>
+			<!-- 3 блока -->
+			<div class="row text-center">
+				<div class="col col-lg-8 col-xs-4">
+					<p class="text text-l">33.3%</p>
+				</div>
+				<div class="col col-lg-8 col-xs-4">
+					<p class="text text-l">33.3%</p>
+				</div>
+				<div class="col col-lg-8 col-xs-4">
+					<p class="text text-l">33.3%</p>
+				</div>
+			</div>
+			<!-- 4 блока -->
+			<div class="row text-center">
+				<div class="col col-lg-6 col-xs-3">
+					<p class="text text-l">25%</p>
+				</div>
+				<div class="col col-lg-6 col-xs-3">
+					<p class="text text-l">25%</p>
+				</div>
+				<div class="col col-lg-6 col-xs-3">
+					<p class="text text-l">25%</p>
+				</div>
+				<div class="col col-lg-6 col-xs-3">
+					<p class="text text-l">25%</p>
+				</div>
+			</div>
+			<!-- 6 блоков -->
+			<div class="row text-center">
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+				<div class="col col-lg-4 col-xs-12">
+					<p class="text text-l">16.6%</p>
+				</div>
+			</div>
+			<!-- 12 блоков -->
+			<div class="row text-center">
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+				<div class="col col-lg-2 col-xs-12">
+					<p class="text text-l">8.3%</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid mt-red">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;!-- 1 блок --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot; col col-lg-24 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;100%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 2 блока --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot;col col-lg-12 col-xs-6&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;50%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-12 col-xs-6&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;50%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 3 блока --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot;col col-lg-8 col-xs-4&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;33.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-8 col-xs-4&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;33.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-8 col-xs-4&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;33.3%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 4 блока --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot;col col-lg-6 col-xs-3&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;25%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-6 col-xs-3&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;25%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-6 col-xs-3&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;25%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-6 col-xs-3&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;25%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 6 блоков --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-4 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;16.6%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 12 блоков --&gt;
+&lt;div class=&quot;row text-center&quot;&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col col-lg-2 col-xs-12&quot;&gt;
+        &lt;p class=&quot;text text-l&quot;&gt;8.3%&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Подсветка</h1>
+				</div>
+			</div>
+			<div class="row mb-blue features">
+				<div class="col-lg-8 col-xs-12 mb-xs-25">
+					<div class="features">
+						<div class="features--item">
+							<div class="features--item__inner">
+								<div class="features--front">
+									<img class="img-fluid mb-25" src="./images/card1-1.png" alt="">
+									<h5 class="h5 mb-pink">Full-Array Local Dimming</h5>
+									<div class="text text-m text-gray-2">ZG9 AG9 AG8 <span class="text-blue">XG95</span>
+										XG85 XG80 XG70 WG6</div>
+								</div>
+								<div class="features--back">
+									<h5 class="h5 mb-pink">Backlight Master Dive</h5>
+									<div class="text text-m text-gray-2">Обеспечивает глубокий черный цвет и отсутствие
+										засветки вокруг ярких объектов. Отличается сверхплотным расположением
+										светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального
+										затемнения.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-12 mb-xs-25">
+					<div class="features">
+						<div class="features--item">
+							<div class="features--item__inner">
+								<div class="features--front">
+									<img class="img-fluid mb-25" src="./images/card1-2.png" alt="">
+									<h5 class="h5 mb-pink">Full-Array Local Dimming</h5>
+									<div class="text text-m text-gray-2">ZG9 AG9 AG8 <span class="text-blue">XG95</span>
+										XG85 XG80 XG70 WG6</div>
+								</div>
+								<div class="features--back">
+									<h5 class="h5 mb-pink">Backlight Master Dive</h5>
+									<div class="text text-m text-gray-2">Обеспечивает глубокий черный цвет и отсутствие
+										засветки вокруг ярких объектов. Отличается сверхплотным расположением
+										светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального
+										затемнения.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-12">
+					<div class="features">
+						<div class="features--item">
+							<div class="features--item__inner">
+								<div class="features--front">
+									<img class="img-fluid mb-25" src="./images/card1-3.png" alt="">
+									<h5 class="h5 mb-pink">Full-Array Local Dimming</h5>
+									<div class="text text-m text-gray-2">ZG9 AG9 AG8 <span class="text-blue">XG95</span>
+										XG85 XG80 XG70 WG6</div>
+								</div>
+								<div class="features--back">
+									<h5 class="h5 mb-pink">Backlight Master Dive</h5>
+									<div class="text text-m text-gray-2">Обеспечивает глубокий черный цвет и отсутствие
+										засветки вокруг ярких объектов. Отличается сверхплотным расположением
+										светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального
+										затемнения.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue features&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;features&quot;&gt;
+            &lt;div class=&quot;features--item&quot;&gt;
+                &lt;div class=&quot;features--item__inner&quot;&gt;
+                    &lt;div class=&quot;features--front&quot;&gt;
+                        &lt;img class=&quot;img-fluid mb-25&quot; src=&quot;./images/card1-1.png&quot; alt=&quot;&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Full-Array Local Dimming&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;ZG9 AG9 AG8 &lt;span class=&quot;text-blue&quot;&gt;XG95&lt;/span&gt; XG85 XG80
+                            XG70 WG6&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;features--back&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Backlight Master Dive&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;Обеспечивает глубокий черный цвет и отсутствие засветки
+                            вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым
+                            из них и интеллектуальным алгоритмом локального затемнения.&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;features&quot;&gt;
+            &lt;div class=&quot;features--item&quot;&gt;
+                &lt;div class=&quot;features--item__inner&quot;&gt;
+                    &lt;div class=&quot;features--front&quot;&gt;
+                        &lt;img class=&quot;img-fluid mb-25&quot; src=&quot;./images/card1-2.png&quot; alt=&quot;&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Full-Array Local Dimming&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;ZG9 AG9 AG8 &lt;span class=&quot;text-blue&quot;&gt;XG95&lt;/span&gt; XG85 XG80
+                            XG70 WG6&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;features--back&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Backlight Master Dive&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;Обеспечивает глубокий черный цвет и отсутствие засветки
+                            вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым
+                            из них и интеллектуальным алгоритмом локального затемнения.&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12&quot;&gt;
+        &lt;div class=&quot;features&quot;&gt;
+            &lt;div class=&quot;features--item&quot;&gt;
+                &lt;div class=&quot;features--item__inner&quot;&gt;
+                    &lt;div class=&quot;features--front&quot;&gt;
+                        &lt;img class=&quot;img-fluid mb-25&quot; src=&quot;./images/card1-3.png&quot; alt=&quot;&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Full-Array Local Dimming&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;ZG9 AG9 AG8 &lt;span class=&quot;text-blue&quot;&gt;XG95&lt;/span&gt; XG85 XG80
+                            XG70 WG6&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;features--back&quot;&gt;
+                        &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Backlight Master Dive&lt;/h5&gt;
+                        &lt;div class=&quot;text text-m text-gray-2&quot;&gt;Обеспечивает глубокий черный цвет и отсутствие засветки
+                            вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым
+                            из них и интеллектуальным алгоритмом локального затемнения.&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="mb-yellow splash-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-xs-12 bottom-line order-xs-2">
+					<div class="text text-l text-blue-gray-1 mb-5 mt-35 mt-xs-30">Электронный курс</div>
+					<h2 class="h2">Продажи корпоративным клиентам</h2>
+					<button class="btn btn__primary splash" title="Начать" onclick="StartModule();">Начать
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.3501 9.56912 18.9832 9.56912 19.3738 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3738 22.0405C18.9832 22.431 18.3501 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5858 17.0001H8.66666C8.11437 17.0001 7.66666 16.5524 7.66666 16.0001C7.66666 15.4478 8.11437 15.0001 8.66666 15.0001H21.5858L17.9595 11.3739Z"
+								fill="white" />
+						</svg>
+					</button>
+				</div>
+				<div class="col-lg-12 col-xs-12 pl-0 pr-0 order-xs-1">
+					<div class="img-splash-contain">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;splash-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-12 col-xs-12 bottom-line order-xs-2&quot;&gt;
+            &lt;div class=&quot;text text-l text-blue-gray-1 mb-5 mt-35 mt-xs-30&quot;&gt;Электронный курс&lt;/div&gt;
+            &lt;h2 class=&quot;h2&quot;&gt;Телевизоры Sony BRAVIA 2019&lt;/h2&gt;
+            &lt;button class=&quot;btn btn__primary splash&quot;&gt;Начать
+                &lt;svg width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;path
+                        d=&quot;M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.3501 9.56912 18.9832 9.56912 19.3738 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3738 22.0405C18.9832 22.431 18.3501 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5858 17.0001H8.66666C8.11437 17.0001 7.66666 16.5524 7.66666 16.0001C7.66666 15.4478 8.11437 15.0001 8.66666 15.0001H21.5858L17.9595 11.3739Z&quot;
+                        fill=&quot;white&quot; /&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-12 col-xs-12 pl-0 pr-0 order-xs-1&quot;&gt;
+            &lt;div class=&quot;img-splash-cover&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow mt-blue">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Квадрокоптеры</h1>
+				</div>
+			</div>
+			<div class="row mb-blue">
+				<div class="col-lg-10 col-xs-12 order-xs-2">
+					<div class="text text-xl">Компания «Пилотаж» занимается производством квадрокоптеров начального
+						уровня.</div>
+				</div>
+				<div class="col-lg-2 hide-xs">&nbsp;</div>
+				<div class="col-lg-12 col-xs-12 mb-xs-25 order-xs-1">
+					<img class="img-fluid" src="./images/quadcopters.png" alt="">
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue&quot;&gt;
+    &lt;div class=&quot;col-lg-10 col-xs-12 order-xs-2&quot;&gt;
+        &lt;div class=&quot;text text-xl&quot;&gt;Компания «Пилотаж» занимается производством квадрокоптеров начального уровня.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-2 hide-xs&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-12 mb-xs-25 order-xs-1&quot;&gt;
+        &lt;img class=&quot;img-fluid&quot; src=&quot;./images/quadcopters.png&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid mb-red">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">Ключевые технологии и функции</h2>
+				</div>
+			</div>
+			<div class="row mb-blue">
+				<div class="col-lg-6 col-xs-6 mb-xs-40">
+					<div class="divider">
+						<div class="divider__img-icon">
+							<img src="./images/icon1-1.png" alt="" />
+						</div>
+						<h5 class="h5 mb-pink">Headless</h5>
+						<div class="text text-m">Квадрокоптер летит в нужную сторону, не зависимо от того, какой
+							стороной он повернут задней. Режим для новичков, позволяет не путаться в управлении.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-6">
+					<div class="divider">
+						<div class="divider__img-icon">
+							<img src="./images/icon1-2.png" alt="" />
+						</div>
+						<h5 class="h5 mb-pink">Wi-Fi</h5>
+						<div class="text text-m">Дает возможность передачи видео сигнала в режиме реального времени с
+							модели на мобильное устройство пользователя.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-6">
+					<div class="divider">
+						<div class="divider__img-icon">
+							<img src="./images/icon1-3.png" alt="" />
+						</div>
+						<h5 class="h5 mb-pink">FPV (First Person View)</h5>
+						<div class="text text-m">Полет от первого лица. Пользователь видит изображение, передаваемое с
+							камеры квадрокоптера на телефон или виртуальные очки.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-6">
+					<div class="divider">
+						<div class="divider__img-icon">
+							<img src="./images/icon1-4.png" alt="" />
+						</div>
+						<h5 class="h5 mb-pink">3D кульбит</h5>
+						<div class="text text-m">Переворот модели в воздухе на 360 градусов по любой из осей.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-6 col-xs-6 mb-xs-40&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__img-icon&quot;&gt;
+                &lt;img src=&quot;./images/icon1-1.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Headless&lt;/h5&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Квадрокоптер летит в нужную сторону, не зависимо от того, какой
+                стороной он повернут задней. Режим для новичков, позволяет не путаться в управлении.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-6 col-xs-6&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__img-icon&quot;&gt;
+                &lt;img src=&quot;./images/icon1-2.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Wi-Fi&lt;/h5&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Дает возможность передачи видео сигнала в режиме реального времени с
+                модели на мобильное устройство пользователя.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-6 col-xs-6&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__img-icon&quot;&gt;
+                &lt;img src=&quot;./images/icon1-3.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;FPV (First Person View)&lt;/h5&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Полет от первого лица. Пользователь видит изображение, передаваемое с
+                камеры квадрокоптера на телефон или виртуальные очки.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-6 col-xs-6&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__img-icon&quot;&gt;
+                &lt;img src=&quot;./images/icon1-4.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;3D кульбит&lt;/h5&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Переворот модели в воздухе на 360 градусов по любой из осей.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-blue dialog">
+				<div class="col-lg-12 col-xs-4">
+					<div class="pers pers__1--1"></div>
+				</div>
+				<div class="col-lg-10 col-xs-8">
+					<div class="speech left__bottom">
+						<div class="text text-m">Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+							рассмотрим эти модели подробнее.
+						</div>
+						<a class="btn btn__download" href="./images/favicon.ico" target="PromoteFirefoxWindow"
+							onclick="openRequestedPopup(this.href, this.target); return false;">Скачать</a>
+					</div>
+				</div>
+				<div class="col-lg-2 hide-xs">&nbsp;</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue dialog&quot;&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-4&quot;&gt;
+        &lt;div class=&quot;pers pers__1--1&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-10 col-xs-8&quot;&gt;
+        &lt;div class=&quot;speech left__bottom&quot;&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+                рассмотрим эти модели подробнее.
+            &lt;/div&gt;
+            &lt;a class=&quot;btn btn__download&quot; href=&quot;./images/favicon.ico&quot; target=&quot;PromoteFirefoxWindow&quot;
+                onclick=&quot;openRequestedPopup(this.href, this.target); return false;&quot;&gt;Скачать&lt;/ф&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-2 hide-xs&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-blue dialog reverse">
+				<div class="col-lg-12 col-xs-4">
+					<div class="pers pers__1--1 reverse"></div>
+				</div>
+				<div class="col-lg-10 col-xs-8">
+					<div class="speech right__bottom">
+						<div class="text text-m">Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+							рассмотрим эти модели подробнее.
+						</div>
+						<a class="btn btn__download" href="./images/favicon.ico" target="PromoteFirefoxWindow"
+							onclick="openRequestedPopup(this.href, this.target); return false;">Скачать</a>
+					</div>
+				</div>
+				<div class="col-lg-2 hide-xs">&nbsp;</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue dialog reverse&quot;&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-4&quot;&gt;
+        &lt;div class=&quot;pers pers__1--1 reverse&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-10 col-xs-8&quot;&gt;
+        &lt;div class=&quot;speech left__bottom&quot;&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+                рассмотрим эти модели подробнее.
+            &lt;/div&gt;
+            &lt;a class=&quot;btn btn__download&quot; href=&quot;./images/favicon.ico&quot; target=&quot;PromoteFirefoxWindow&quot;
+                onclick=&quot;openRequestedPopup(this.href, this.target); return false;&quot;&gt;Скачать&lt;/ф&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-2 hide-xs&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="grid mb-yellow">
+			<div class="row dialog chat">
+				<div class="col-lg-3 col-xs-1"></div>
+				<div class="col-lg-18 col-xs-9">
+					<div class="speech bg-blue-gray-1 right__top">
+						<div class="text text-m">Продавей всегда справа. Просто отключаем ненужное внутри компонента
+							составного блока.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-2">
+					<div class="pers__circle">
+						<img src="./images/pers/circle/pers-circle__1--1-reverse.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row dialog reverse chat">
+				<div class="col-lg-3 col-xs-1"></div>
+				<div class="col-lg-18 col-xs-9">
+					<div class="speech bg-gray-5 left__top">
+						<h5 class="h5 mb-pink">Внутри бабла — базовый составной блок</h5>
+						<div class="text text-m text-gray-1 mb-pink">С помощью технологии MIMO возможен одновременный
+							прием.</div>
+						<ul class="list list__ul text text-m text-gray-1">
+							<li class="list__ul--dash">Multiple-Input Multiple-Output.</li>
+							<li class="list__ul--dash">Многоканальный вход/выход.</li>
+						</ul>
+						<div class="text text-m text-gray-1 mb-pink">С помощью технологии MIMO возможен одновременный
+							прием.</div>
+						<ol class="list list__ol text text-m text-gray-1">
+							<li class="list__ol--item">Multiple-Input Multiple-Output.</li>
+							<li class="list__ol--item">Многоканальный вход/выход.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-2">
+					<div class="pers__circle">
+						<img src="./images/pers/circle/pers-circle__1--1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row dialog chat">
+				<div class="col-lg-3 col-xs-1"></div>
+				<div class="col-lg-18 col-xs-9">
+					<div class="speech bg-blue-gray-1 right__top">
+						<div class="text text-m">Просто отключаем ненужное внутри компонента составного блока
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-2">
+					<div class="pers__circle">
+						<img src="./images/pers/circle/pers-circle__1--1-reverse.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row dialog reverse chat">
+				<div class="col-lg-3 col-xs-1"></div>
+				<div class="col-lg-18 col-xs-9">
+					<div class="speech bg-gray-5 left__top">
+						<div class="text text-m text-gray-1">С помощью технологии MIMO возможен одновременный прием.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-2">
+					<div class="pers__circle">
+						<img src="./images/pers/circle/pers-circle__1--1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="grid mb-yellow">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">Уникальные преимущества «Капсулы»</h2>
+				</div>
+			</div>
+			<div class="row mb-blue">
+				<div class="col-lg-8 col-xs-12 mb-xs-25">
+					<div class="divider row-wrap-xs">
+						<div class="divider__img">
+							<img src="./images/icon-img-1.png" alt="" />
+						</div>
+						<div class="text text-m">Интеграция с Вконтакте: музыка, плейлисты, подкасты и онлайн-звонки.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-12 mb-xs-25">
+					<div class="divider row-wrap-xs">
+						<div class="divider__img">
+							<img src="./images/icon-img-2.png" alt="" />
+						</div>
+						<div class="text text-m">Голосовое управление музыкой с устройства через Bluetooth.</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-12">
+					<div class="divider row-wrap-xs">
+						<div class="divider__img">
+							<img src="./images/icon-img-3.png" alt="" />
+						</div>
+						<div class="text text-m">Развлекательный и образовательный контент для ребенка: более 500
+							сказок, игры, «болталка с Марусей», ночной и детский режимы.</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;divider row-wrap-xs&quot;&gt;
+            &lt;div class=&quot;divider__img&quot;&gt;
+                &lt;img src=&quot;./images/icon-img-1.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Интеграция с Вконтакте: музыка, плейлисты, подкасты и онлайн-звонки.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;divider row-wrap-xs&quot;&gt;
+            &lt;div class=&quot;divider__img&quot;&gt;
+                &lt;img src=&quot;./images/icon-img-2.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Голосовое управление музыкой с устройства через Bluetooth.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12&quot;&gt;
+        &lt;div class=&quot;divider row-wrap-xs&quot;&gt;
+            &lt;div class=&quot;divider__img&quot;&gt;
+                &lt;img src=&quot;./images/icon-img-3.png&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;Развлекательный и образовательный контент для ребенка: более 500
+                сказок, игры, «болталка с Марусей», ночной и детский режимы.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-green">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">Характеристики устройства</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-24 col-xs-12">
+					<div class="table">
+						<div class="table__row border-bottom border-light-blue">
+							<div class="table__cell">
+								<div class="text text-l text-bold">Galaxy S10+</div>
+							</div>
+							<div class="table__cell">
+								<div class="text text-l text-bold">Galaxy S9</div>
+							</div>
+						</div>
+						<div class="table__row border-bottom border-light-blue">
+							<div class="table__cell">
+								<div class="text text-s text-blue text-uppercase text-ls-3 mb-magenta">Дисплей</div>
+								<div class="text text-m">6.4“ (19:9) <br>
+									3040 x 1440 <br>
+									Quad HD+ (522 ppi) <br><br>
+									Иммерсивный Dynamic AMOLED экран
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="text text-s text-blue text-uppercase text-ls-3 mb-magenta">&nbsp;</div>
+								<div class="text text-m">
+									6.2“ (18,5:9) <br>
+									2960 x 1440 <br>
+									Quad HD+ (529 ppi) <br><br>
+									Безграничный Super AMOLED экран
+								</div>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="text text-s text-blue text-uppercase text-ls-3 mb-magenta">Фото модели</div>
+								<img class="img-fluid" src="./images/reference.png" alt="reference">
+							</div>
+							<div class="table__cell">
+								<div class="text text-s text-blue text-uppercase text-ls-3 mb-magenta">&nbsp;</div>
+								<img class="img-fluid" src="./images/reference.png" alt="reference">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-red">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">Характеристики устройства</h2>
+				</div>
+			</div>
+			<div class="row mb-blue">
+				<div class="col-lg-24 col-xs-12">
+					<div class="panel bg-dark-blue text-center text-white">
+						<div class="text text-m mb-5">Контрастность</div>
+						<h2 class="h2 mb-5">2 000 000:1</h2>
+						<div class="text text-m">для глубокого черного цвета и ярких светлых оттенков</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;div class=&quot;panel bg-dark-blue text-center text-white&quot;&gt;
+            &lt;div class=&quot;text text-m mb-5&quot;&gt;Контрастность&lt;/div&gt;
+            &lt;h2 class=&quot;h2 mb-5&quot;&gt;2 000 000:1&lt;/h2&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;для глубокого черного цвета и ярких светлых оттенков&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-green">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1 mb-green">Acoustic Surface Audio</h1>
+					<div class="text text-xl">Оригинальный контроллер Sony для OLED-панелей расширяет динамический
+						диапазон, увеличивая площадь цветопередачи при высокой яркости. Благодаря этому, изображение
+						улучшается, и на нем видны все текстуры и детали.</div>
+				</div>
+			</div>
+			<div class="swiper-container mb-blue">
+				<div class="swiper-grid">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<div class="row">
+									<div class="col-lg-4 hide-xs"></div>
+									<div class="col-lg-16 col-xs-12">
+										<div class="text-center">
+											<img class="img-fluid mb-cyan" src="./images/swiper-1.png" alt="swiper-1">
+										</div>
+										<h5 class="h5">Сабвуферы размещены на задней панели.</h5>
+									</div>
+									<div class="col-lg-4 hide-xs"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<div class="row">
+									<div class="col-lg-4 hide-xs"></div>
+									<div class="col-lg-16 col-xs-12">
+										<div class="text-center">
+											<img class="img-fluid mb-cyan" src="./images/swiper-1.png" alt="swiper-1">
+										</div>
+										<h5 class="h5">Сабвуферы размещены на задней панели.</h5>
+									</div>
+									<div class="col-lg-4 hide-xs"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-nav">
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<div class="row mb-red mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;swiper-container mb-blue&quot;&gt;
+    &lt;div class=&quot;swiper-grid&quot;&gt;
+        &lt;div class=&quot;swiper-wrapper&quot;&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;swiper-slide__content&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;col-lg-16 col-xs-12&quot;&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/swiper-1.png&quot; alt=&quot;swiper-1&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;h5 class=&quot;h5&quot;&gt;Сабвуферы размещены на задней панели.&lt;/h5&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;swiper-slide__content&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;col-lg-16 col-xs-12&quot;&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/swiper-1.png&quot; alt=&quot;swiper-1&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;h5 class=&quot;h5&quot;&gt;Сабвуферы размещены на задней панели.&lt;/h5&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;swiper-nav&quot;&gt;
+        &lt;!-- Add Pagination --&gt;
+        &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+        &lt;!-- Add Arrows --&gt;
+        &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+			<div class="swiper-container gray mb-blue">
+				<div class="swiper-grid">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<div class="row">
+									<div class="col-lg-4 hide-xs"></div>
+									<div class="col-lg-16 col-xs-12">
+										<div class="text-center">
+											<img class="img-fluid mb-cyan" src="./images/swiper-1.png" alt="swiper-1">
+										</div>
+										<h5 class="h5">Сабвуферы размещены на задней панели.</h5>
+									</div>
+									<div class="col-lg-4 hide-xs"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<div class="row">
+									<div class="col-lg-4 hide-xs"></div>
+									<div class="col-lg-16 col-xs-12">
+										<div class="text-center">
+											<img class="img-fluid mb-cyan" src="./images/swiper-1.png" alt="swiper-1">
+										</div>
+										<h5 class="h5">Сабвуферы размещены на задней панели.</h5>
+									</div>
+									<div class="col-lg-4 hide-xs"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-nav">
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;swiper-container gray mb-blue&quot;&gt;
+    &lt;div class=&quot;swiper-grid&quot;&gt;
+        &lt;div class=&quot;swiper-wrapper&quot;&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;swiper-slide__content&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;col-lg-16 col-xs-12&quot;&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/swiper-1.png&quot; alt=&quot;swiper-1&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;h5 class=&quot;h5&quot;&gt;Сабвуферы размещены на задней панели.&lt;/h5&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;swiper-slide__content&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;col-lg-16 col-xs-12&quot;&gt;
+                            &lt;div class=&quot;text-center&quot;&gt;
+                                &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/swiper-1.png&quot; alt=&quot;swiper-1&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;h5 class=&quot;h5&quot;&gt;Сабвуферы размещены на задней панели.&lt;/h5&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-lg-4 hide-xs&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;swiper-nav&quot;&gt;
+        &lt;!-- Add Pagination --&gt;
+        &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+        &lt;!-- Add Arrows --&gt;
+        &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-yellow">
+			<div class="row mb-green">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">Высокий динамический диапазон</h2>
+				</div>
+			</div>
+			<div class="row mb-blue">
+				<div class="col-lg-12 col-xs-12 mb-xs-25">
+					<div class="row">
+						<div class="col-lg-24 col-xs-9">
+							<img class="img-fluid" src="./images/img2-1.png" alt="">
+						</div>
+						<div class="col-lg-24 col-xs-3">
+							<h5 class="h5 mt-cyan mt-xs-0">Без HDR</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-24 col-xs-9">
+							<img class="img-fluid" src="./images/img2-2.png" alt="">
+						</div>
+						<div class="col-lg-24 col-xs-3">
+							<h5 class="h5 mt-cyan mt-xs-0">C HDR</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hr hr-gray">
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row mb-blue&quot;&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-24 col-xs-9&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;./images/img2-1.png&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-24 col-xs-3&quot;&gt;
+                &lt;h5 class=&quot;h5 mt-cyan mt-xs-0&quot;&gt;Без HDR&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-12&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-24 col-xs-9&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;./images/img2-2.png&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-24 col-xs-3&quot;&gt;
+                &lt;h5 class=&quot;h5 mt-cyan mt-xs-0&quot;&gt;C HDR&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class=&quot;hr hr-gray&quot;&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-blue">
+			<div class="row mb-green">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2 mb-green">Продуманное расположение саундбара</h2>
+					<div class="text text-xl">Подставка телевизора AG8 имеет два положения.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-xs-12 mb-xs-25">
+					<div class="divider">
+						<div class="divider__circle">
+							1
+						</div>
+						<img class="img-fluid mb-cyan" src="./images/img1-1.png" alt="" />
+
+						<h5 class="h5 mb-pink">Классический вариант</h5>
+						<div class="text text-m text-gray-1">Для максимально компактного размещения телевизора, чтобы
+							ничего не отвлекало от просмотра.</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xs-12">
+					<div class="divider">
+						<div class="divider__circle">
+							2
+						</div>
+						<img class="img-fluid mb-cyan" src="./images/img1-2.png" alt="" />
+						<h5 class="h5 mb-pink">Поворот на 180°</h5>
+						<div class="text text-m text-gray-1">Телевизор приподнимается, чтобы можно было разместить
+							саундбар.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-12 mb-xs-25&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__circle&quot;&gt;
+                1
+            &lt;/div&gt;
+            &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/img1-1.png&quot; alt=&quot;&quot; /&gt;
+
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Классический вариант&lt;/h5&gt;
+            &lt;div class=&quot;text text-m text-gray-1&quot;&gt;Для максимально компактного размещения телевизора, чтобы
+                ничего не отвлекало от просмотра.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-12 col-xs-12&quot;&gt;
+        &lt;div class=&quot;divider&quot;&gt;
+            &lt;div class=&quot;divider__circle&quot;&gt;
+                2
+            &lt;/div&gt;
+            &lt;img class=&quot;img-fluid mb-cyan&quot; src=&quot;./images/img1-2.png&quot; alt=&quot;&quot; /&gt;
+            &lt;h5 class=&quot;h5 mb-pink&quot;&gt;Поворот на 180°&lt;/h5&gt;
+            &lt;div class=&quot;text text-m text-gray-1&quot;&gt;Телевизор приподнимается, чтобы можно было разместить
+                саундбар.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="grid mb-blue">
+			<div class="row">
+				<div class="col-lg-8 col-xs-6 mb-xs-15">
+					<div class="panel bg-gray-5 text-center">
+						<div class="text text-m text-blue-gray-2 mb-5">Контрастность</div>
+						<h2 class="h2 text-blue mb-5">2 000 000:1</h2>
+						<div class="text text-s text-blue-gray-2">для глубокого черного цвета и ярких светлых оттенков
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-6 mb-xs-15">
+					<div class="panel bg-gray-5 text-center">
+						<div class="text text-m text-blue-gray-2 mb-5">Контрастность</div>
+						<h2 class="h2 text-blue mb-5">2 000 000:1</h2>
+						<div class="text text-s text-blue-gray-2">для глубокого черного цвета и ярких светлых оттенков
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-xs-12">
+					<div class="panel bg-gray-5 text-center">
+						<div class="text text-m text-blue-gray-2 mb-5">Контрастность</div>
+						<h2 class="h2 text-blue mb-5">2 000 000:1</h2>
+						<div class="text text-s text-blue-gray-2">для глубокого черного цвета и ярких светлых оттенков
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-6 mb-xs-15&quot;&gt;
+        &lt;div class=&quot;panel bg-gray-5 text-center&quot;&gt;
+            &lt;div class=&quot;text text-m text-blue-gray-2 mb-5&quot;&gt;Контрастность&lt;/div&gt;
+            &lt;h2 class=&quot;h2 text-blue mb-5&quot;&gt;2 000 000:1&lt;/h2&gt;
+            &lt;div class=&quot;text text-s text-blue-gray-2&quot;&gt;для глубокого черного цвета и ярких светлых оттенков
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-6 mb-xs-15&quot;&gt;
+        &lt;div class=&quot;panel bg-gray-5 text-center&quot;&gt;
+            &lt;div class=&quot;text text-m text-blue-gray-2 mb-5&quot;&gt;Контрастность&lt;/div&gt;
+            &lt;h2 class=&quot;h2 text-blue mb-5&quot;&gt;2 000 000:1&lt;/h2&gt;
+            &lt;div class=&quot;text text-s text-blue-gray-2&quot;&gt;для глубокого черного цвета и ярких светлых оттенков
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12&quot;&gt;
+        &lt;div class=&quot;panel bg-gray-5 text-center&quot;&gt;
+            &lt;div class=&quot;text text-m text-blue-gray-2 mb-5&quot;&gt;Контрастность&lt;/div&gt;
+            &lt;h2 class=&quot;h2 text-blue mb-5&quot;&gt;2 000 000:1&lt;/h2&gt;
+            &lt;div class=&quot;text text-s text-blue-gray-2&quot;&gt;для глубокого черного цвета и ярких светлых оттенков
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- buttons -->
+		<div class="grid mb-blue">
+			<div class="row mb-cyan" id="buttons">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Кнопки</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow btn__bottom">
+				<div class="col-lg-4 col-xs-3">
+					<button class="btn btn__prev bottom js-prev">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+							<path
+								d="M14.7071 11.3739C15.0976 10.9833 15.0976 10.3502 14.7071 9.95964C14.3165 9.56912 13.6834 9.56912 13.2929 9.95964L7.95952 15.293C7.76426 15.4882 7.66663 15.7442 7.66663 16.0001C7.66663 16.1357 7.69361 16.265 7.7425 16.3829C7.7913 16.5008 7.86364 16.6113 7.95952 16.7072L13.2929 22.0405C13.6834 22.431 14.3165 22.431 14.7071 22.0405C15.0976 21.65 15.0976 21.0168 14.7071 20.6263L11.0808 17.0001H24C24.5522 17.0001 25 16.5524 25 16.0001C25 15.4478 24.5522 15.0001 24 15.0001H11.0808L14.7071 11.3739Z"
+								fill="#373C40" /></svg>
+					</button>
+				</div>
+				<div class="col-lg-20 col-xs-9">
+					<button class="btn btn__next js-next">Продолжить
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+							<path
+								d="M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z"
+								fill="white" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row btn__bottom&quot;&gt;
+    &lt;div class=&quot;col-lg-4 col-xs-3&quot;&gt;
+        &lt;button class=&quot;btn btn__prev&quot;&gt;
+            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;none&quot;&gt;
+                &lt;path d=&quot;M14.7071 11.3739C15.0976 10.9833 15.0976 10.3502 14.7071 9.95964C14.3165 9.56912 13.6834 9.56912 13.2929 9.95964L7.95952 15.293C7.76426 15.4882 7.66663 15.7442 7.66663 16.0001C7.66663 16.1357 7.69361 16.265 7.7425 16.3829C7.7913 16.5008 7.86364 16.6113 7.95952 16.7072L13.2929 22.0405C13.6834 22.431 14.3165 22.431 14.7071 22.0405C15.0976 21.65 15.0976 21.0168 14.7071 20.6263L11.0808 17.0001H24C24.5522 17.0001 25 16.5524 25 16.0001C25 15.4478 24.5522 15.0001 24 15.0001H11.0808L14.7071 11.3739Z&quot; fill=&quot;#373C40&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-20 col-xs-9&quot;&gt;
+        &lt;button class=&quot;btn btn__next&quot;&gt;Продолжить
+            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot; fill=&quot;none&quot;&gt;
+                &lt;path  d=&quot;M17.9595 11.3739C17.569 10.9833 17.569 10.3502 17.9595 9.95964C18.35 9.56912 18.9832 9.56912 19.3737 9.95964L24.7071 15.293C25.0976 15.6835 25.0976 16.3167 24.7071 16.7072L19.3737 22.0405C18.9832 22.431 18.35 22.431 17.9595 22.0405C17.569 21.65 17.569 21.0168 17.9595 20.6263L21.5857 17.0001H8.66663C8.11434 17.0001 7.66663 16.5524 7.66663 16.0001C7.66663 15.4478 8.11434 15.0001 8.66663 15.0001H21.5857L17.9595 11.3739Z&quot; fill=&quot;white&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- blockquote -->
+		<div class="grid mb-blue mt-yellow">
+			<div class="row mb-cyan" id="blockquote">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Элемент цитата</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<div class="blockquote">
+						<div class="blockquote__content">
+							<div class="blockquote__title">
+								Здесь используется Auto Layout.
+							</div>
+							<div class="blockquote__text">
+								Размеры окна, а так же отступы формируются автоматически!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<div class="blockquote">
+						<div class="blockquote__icon">
+							<img src="images/logo-mini.svg" alt="logo-mini">
+						</div>
+						<div class="blockquote__content">
+							<div class="blockquote__title">
+								Здесь используется Auto Layout.
+							</div>
+							<div class="blockquote__text">
+								Размеры окна, а так же отступы формируются автоматически!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<div class="blockquote">
+						<div class="blockquote__icon last">
+							<img src="images/logo-mini.svg" alt="logo-mini">
+						</div>
+						<div class="blockquote__content first">
+							<div class="blockquote__title">
+								Здесь используется Auto Layout.
+							</div>
+							<div class="blockquote__text">
+								Размеры окна, а так же отступы формируются автоматически!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;div class=&quot;blockquote&quot;&gt;
+            &lt;div class=&quot;blockquote__content&quot;&gt;
+                &lt;div class=&quot;blockquote__title&quot;&gt;
+                    Здесь используется Auto Layout.
+                &lt;/div&gt;
+                &lt;div class=&quot;blockquote__text&quot;&gt;
+                    Размеры окна, а так же отступы формируются автоматически!
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;div class=&quot;blockquote&quot;&gt;
+            &lt;div class=&quot;blockquote__icon&quot;&gt;
+                &lt;img src=&quot;images/logo-mini.svg&quot; alt=&quot;logo-mini&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;blockquote__content&quot;&gt;
+                &lt;div class=&quot;blockquote__title&quot;&gt;
+                    Здесь используется Auto Layout.
+                &lt;/div&gt;
+                &lt;div class=&quot;blockquote__text&quot;&gt;
+                    Размеры окна, а так же отступы формируются автоматически!
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;div class=&quot;blockquote&quot;&gt;
+            &lt;div class=&quot;blockquote__icon last&quot;&gt;
+                &lt;img src=&quot;images/logo-mini.svg&quot; alt=&quot;logo-mini&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;blockquote__content first&quot;&gt;
+                &lt;div class=&quot;blockquote__title&quot;&gt;
+                    Здесь используется Auto Layout.
+                &lt;/div&gt;
+                &lt;div class=&quot;blockquote__text&quot;&gt;
+                    Размеры окна, а так же отступы формируются автоматически!
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- list -->
+		<div class="grid mb-blue">
+			<div class="row mb-cyan" id="lists">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Списки</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-12 col-xs-12 mb-xs-35">
+					<ul class="list list__ul text text-m text-gray-1">
+						<li class="list__ul--dash">Multiple-Input Multiple-Output.</li>
+						<li class="list__ul--dash">Многоканальный вход/выход.</li>
+					</ul>
+				</div>
+				<div class="col-lg-12 col-xs-12">
+					<ol class="list list__ol text text-m text-gray-1">
+						<li class="list__ol--item">Multiple-Input Multiple-Output.</li>
+						<li class="list__ol--item">Многоканальный вход/выход.</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-12 col-xs-12 mb-xs-35">
+					<ol class="list list--blue list__circle text text-l">
+						<li class="list__circle--item">Социально-экономические.</li>
+						<li class="list__circle--item">Организационно-технические.</li>
+						<li class="list__circle--item">Санитарно-гигиенические.</li>
+					</ol>
+				</div>
+				<div class="col-lg-12 col-xs-12">
+					<ol class="list list--blue_border list__circle text text-l">
+						<li class="list__circle--item">Социально-экономические.</li>
+						<li class="list__circle--item">Организационно-технические.</li>
+						<li class="list__circle--item">Санитарно-гигиенические.</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- title -->
+		<div class="grid mb-blue">
+			<div class="row mb-cyan" id="title">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Заголовки</h1>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">
+						H1
+					</h1>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<h2 class="h2">
+						H2
+					</h2>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<h3 class="h3">
+						H3
+					</h3>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<h4 class="h4">
+						H4
+					</h4>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<h5 class="h5">H5</h5>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<h6 class="h6">
+						H6
+					</h6>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;h1 class=&quot;h1&quot;&gt;Заголовок уровня H1&lt;/h1&gt;
+&lt;h2 class=&quot;h2&quot;&gt;Заголовок уровня H2&lt;/h2&gt;
+&lt;h3 class=&quot;h3&quot;&gt;Заголовок уровня H3&lt;/h3&gt;
+&lt;h4 class=&quot;h4&quot;&gt;Заголовок уровня H4&lt;/h4&gt;
+&lt;h5 class=&quot;h5&quot;&gt;Заголовок уровня H5&lt;/h5&gt;
+&lt;h6 class=&quot;h6&quot;&gt;Заголовок уровня H6&lt;/h6&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- text -->
+		<div class="grid mb-blue">
+			<div class="row mb-cyan" id="text">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Текста</h1>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<p class="text text-xl">Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890</p>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<p class="text text-l">Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890</p>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<p class="text text-m">Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890</p>
+				</div>
+			</div>
+			<div class="row mb-pink">
+				<div class="col-lg-24 col-xs-12">
+					<p class="text text-s">Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890</p>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<p class="text text-xs">Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890</p>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;p class=&quot;text text-xl&quot;&gt;Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890&lt;/p&gt;
+&lt;p class=&quot;text text-l&quot;&gt;Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890&lt;/p&gt;
+&lt;p class=&quot;text text-m&quot;&gt;Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890&lt;/p&gt;
+&lt;p class=&quot;text text-s&quot;&gt;Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890&lt;/p&gt;
+&lt;p class=&quot;text text-xs&quot;&gt;Съешь ещё этих мягких французских булок, да выпей же чаю. 1234567890&lt;/p&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- tabs -->
+		<div class="grid mb-blue mt-yellow">
+			<div class="row mb-cyan" id="tabs">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Элемент вкладки</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<ul class="tabs tabs-fixed-width">
+						<li class="tab"><a class="active" href="#tab1">Tab 1</a></li>
+						<li class="tab"><a href="#tab2">Tab 2</a></li>
+						<li class="tab"><a href="#tab3">Tab 3</a></li>
+					</ul>
+					<div id="tab1">
+						<div class="lmm-row">
+							<div class="col-lg-24 col-xs-12">
+								<div class="text text-l">Tab content 1</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab2">
+						<div class="lmm-row">
+							<div class="col-lg-24 col-xs-12">
+								<div class="text text-l">Tab content 2</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3">
+						<div class="lmm-row">
+							<div class="col-lg-24 col-xs-12">
+								<div class="text text-l">Tab content 3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;ul class=&quot;tabs tabs-fixed-width&quot;&gt;
+            &lt;li class=&quot;tab&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;#tab1&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tab2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tab3&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div id=&quot;tab1&quot;&gt;
+            &lt;div class=&quot;lmm-row&quot;&gt;
+                &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+                    &lt;div class=&quot;text text-l&quot;&gt;Tab content 1&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tab2&quot;&gt;
+            &lt;div class=&quot;lmm-row&quot;&gt;
+                &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+                    &lt;div class=&quot;text text-l&quot;&gt;Tab content 2&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tab3&quot;&gt;
+            &lt;div class=&quot;lmm-row&quot;&gt;
+                &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+                    &lt;div class=&quot;text text-l&quot;&gt;Tab content 3&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- accordion -->
+		<div class="grid mb-blue mt-yellow">
+			<div class="row mb-cyan" id="accordion">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Элемент аккордеон</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<div class="lmm-accordion">
+						<div class="lmm-accordion__wrapper">
+							<div class="lmm-accordion__item">
+								<input checked="checked" class="checkbox-xs_block" type="checkbox"> <i>&nbsp;</i>
+								<div class="lmm-accordion__title">
+									<div class="text text-l text__bold">Любители играть с друзьями
+									</div>
+								</div>
+								<div class="lmm-accordion__content">
+									<div class="text text-l">
+										Ежемесячно в Xbox Live играют более 50 миллионов геймеров, это значит, что
+										клиент всегда найдет себе компанию. Играть в Minecraft и подобные игры лучше
+										всего в кооперативном режиме вместе с друзьями, Mortal Kombat 11 и другие
+										файтинги играть интереснее с живыми, а не компьютерными соперниками.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lmm-accordion__wrapper">
+							<div class="lmm-accordion__item">
+								<input checked="checked" class="checkbox-xs_block" type="checkbox"> <i>&nbsp;</i>
+								<div class="lmm-accordion__title">
+									<div class="text text-l text__bold">Любители играть с друзьями2
+									</div>
+								</div>
+								<div class="lmm-accordion__content">
+									<div class="text text-l">
+										Ежемесячно в Xbox Live играют более 50 миллионов геймеров, это значит, что
+										клиент всегда найдет себе компанию. Играть в Minecraft и подобные игры лучше
+										всего в кооперативном режиме вместе с друзьями, Mortal Kombat 11 и другие
+										файтинги играть интереснее с живыми, а не компьютерными соперниками.2
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;div class=&quot;lmm-accordion&quot;&gt;
+            &lt;div class=&quot;lmm-accordion__wrapper&quot;&gt;
+                &lt;div class=&quot;lmm-accordion__item&quot;&gt;
+                    &lt;input checked=&quot;checked&quot; class=&quot;checkbox-xs_block&quot; type=&quot;checkbox&quot;&gt; &lt;i&gt;&amp;nbsp;&lt;/i&gt;
+                    &lt;div class=&quot;lmm-accordion__title&quot;&gt;
+                        &lt;div class=&quot;text text-l text__bold&quot;&gt;Любители играть с друзьями
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;lmm-accordion__content&quot;&gt;
+                        &lt;div class=&quot;text text-l&quot;&gt;
+                            Ежемесячно в Xbox Live играют более 50 миллионов геймеров, это значит, что
+                            клиент всегда найдет себе компанию. Играть в Minecraft и подобные игры лучше
+                            всего в кооперативном режиме вместе с друзьями, Mortal Kombat 11 и другие
+                            файтинги играть интереснее с живыми, а не компьютерными соперниками.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;lmm-accordion__wrapper&quot;&gt;
+                &lt;div class=&quot;lmm-accordion__item&quot;&gt;
+                    &lt;input checked=&quot;checked&quot; class=&quot;checkbox-xs_block&quot; type=&quot;checkbox&quot;&gt; &lt;i&gt;&amp;nbsp;&lt;/i&gt;
+                    &lt;div class=&quot;lmm-accordion__title&quot;&gt;
+                        &lt;div class=&quot;text text-l text__bold&quot;&gt;Любители играть с друзьями2
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;lmm-accordion__content&quot;&gt;
+                        &lt;div class=&quot;text text-l&quot;&gt;
+                            Ежемесячно в Xbox Live играют более 50 миллионов геймеров, это значит, что
+                            клиент всегда найдет себе компанию. Играть в Minecraft и подобные игры лучше
+                            всего в кооперативном режиме вместе с друзьями, Mortal Kombat 11 и другие
+                            файтинги играть интереснее с живыми, а не компьютерными соперниками.2
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- hint -->
+		<div class="grid mb-blue mt-yellow">
+			<div class="row mb-cyan" id="hint">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Элемент подсказка</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12 text-center">
+					<div class="hint">
+						<div class="hint__img touch"></div>
+						<div class="hint__text">Нажимай на элементы</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12 text-center&quot;&gt;
+        &lt;div class=&quot;hint&quot;&gt;
+            &lt;div class=&quot;hint__img touch&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;hint__text&quot;&gt;Нажимай на элементы&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- switch -->
+		<div class="grid mb-blue mt-yellow">
+			<div class="row mb-cyan" id="switch">
+				<div class="col-lg-24 col-xs-12">
+					<h1 class="h1">Элемент переключатель</h1>
+				</div>
+			</div>
+			<div class="row mb-yellow">
+				<div class="col-lg-24 col-xs-12">
+					<label class="switch__small">
+						<input name="switch" type="checkbox">
+						<span class="switch__small switch-fill round">&nbsp;</span>
+						<div class="text text-m">показать только отличия</div>
+					</label>
+				</div>
+			</div>
+			<div class="row mt-red">
+				<div class="col-lg-24 col-xs-12">
+					<pre>
+						<code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-24 col-xs-12&quot;&gt;
+        &lt;label class=&quot;switch__small&quot;&gt;
+            &lt;input name=&quot;switch&quot; type=&quot;checkbox&quot;&gt;
+            &lt;span class=&quot;switch__small switch-fill round&quot;&gt;&amp;nbsp;&lt;/span&gt;
+            &lt;div class=&quot;text text-m&quot;&gt;показать только отличия&lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</main>
+	@@include('components/page/_3_footer.html')
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

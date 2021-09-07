@@ -1,0 +1,75 @@
+.bg{
+	&-white {
+		background: $white !important;
+	}
+
+	&-black {
+		background: $black !important;
+	}
+
+	&-red {
+		background: $red !important;
+	}
+
+	&-light-red {
+		background: rgba($red, 0.20) !important;
+	}
+
+	&-green {
+		background: $green !important;
+	}
+
+	&-light-green {
+		background: rgba($green, 0.20) !important;
+	}
+
+	&-beige {
+		background: $beige !important;
+	}
+
+	&-dark-blue {
+		background: $corn !important;
+	}
+
+	&-blue {
+		background: $Main !important;
+	}
+
+	&-light-blue {
+		background: $agua !important;
+	}
+
+	&-pale {
+		background: $pale !important;
+	}
+
+	&-gray-1 {
+		background: $gray-1 !important;
+	}
+
+	&-gray-2 {
+		background: $gray-2 !important;
+	}
+
+	&-gray-3 {
+		background: $gray-3 !important;
+	}
+
+	&-gray-4 {
+		background: $gray-4 !important;
+	}
+
+	&-gray-5 {
+		background: $gray-5 !important;
+	}
+
+	&-blue-gray-1 {
+		background: $blue-gray-1 !important;
+	}
+
+	&-blue-gray-2 {
+		background: $blue-gray-2 !important;
+	}
+
+
+}

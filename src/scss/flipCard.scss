@@ -1,0 +1,122 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &--item {
+        position: relative;
+        display: flex;
+        vertical-align: top;
+        overflow: hidden;
+        width: 100%;
+        cursor: pointer;
+        font-size: $fs14;
+        line-height: $lh21;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $white;
+        text-decoration: none;
+        transition-property: all;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+
+        &__inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s;
+            transform-style: preserve-3d;
+            border: 1px solid $gray-3;
+            border-radius: 15px;
+
+            &.flip {
+                .features--front {
+                    transform: rotateY(180deg);
+                }
+
+                .features--back {
+                    transform: rotateY(0deg);
+                }
+            }
+
+            .features--back {
+                transform: rotateY(-180deg);
+            }
+
+            &:hover {
+                border-color: $gray-2;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 52px;
+            width: 52px;
+            bottom: 40px;
+            display: block;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            transition: background 600ms;
+            background-color: $Main;
+            border: 1px solid $Main;
+            border-radius: 50%;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNy41Mzg0NkMxOC42NTc5IDcuNTM4NDYgMjEuMDMyOSA4LjczNjE1IDIyLjYwMjggMTAuNjE1NEgyNC41MjUyQzIyLjcyNzcgNy44Mzk3NiAxOS41ODEyIDYgMTYgNkMxMC41MTk2IDYgNi4wNTcxOCAxMC4zMDg1IDUuODg5NDggMTUuNjg2MUw0LjEwMDQxIDEzLjkxNzVMMyAxNS4wMDU0TDYuNjYyNjQgMTguNjI2MkwxMC4zMjUzIDE1LjAwNTRMOS4yMjQ4NyAxMy45MTc1TDcuNDQ3IDE1LjY3NTFDNy42MTk3MyAxMS4xNTI1IDExLjM4MjkgNy41Mzg0NiAxNiA3LjUzODQ2WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNOS4zOTc0NiAyMS4zODQ2SDcuNDc1QzkuMjcyNTQgMjQuMTYwMiAxMi40MTkxIDI2IDE2LjAwMDIgMjZDMjEuNDgwNSAyNiAyNS45NDI5IDIxLjY5MTYgMjYuMTEwOCAxNi4zMTQxTDI3Ljg5OTYgMTguMDgyNUwyOSAxNi45OTQ2TDI1LjMzNzQgMTMuMzczOEwyMS42NzQ3IDE2Ljk5NDZMMjIuNzc1MSAxOC4wODI1TDI0LjU1MzIgMTYuMzI0N0MyNC4zODA3IDIwLjg0NzQgMjAuNjE3NCAyNC40NjE1IDE2LjAwMDIgMjQuNDYxNUMxMy4zNDIzIDI0LjQ2MTUgMTAuOTY3NCAyMy4yNjM5IDkuMzk3NDYgMjEuMzg0NloiIGZpbGw9IndoaXRlIi8+PC9zdmc+);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-size: 32px 32px;
+        }
+
+        &.active {
+            &::after {
+                transition: background 600ms;
+                border: 1px solid $blue-gray-1;
+                background: transparent;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-size: 32px 32px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNy41Mzg0NkMxOC42NTc5IDcuNTM4NDYgMjEuMDMyOSA4LjczNjE1IDIyLjYwMjggMTAuNjE1NEgyNC41MjUyQzIyLjcyNzcgNy44Mzk3NiAxOS41ODEyIDYgMTYgNkMxMC41MTk2IDYgNi4wNTcxOCAxMC4zMDg1IDUuODg5NDggMTUuNjg2MUw0LjEwMDQxIDEzLjkxNzVMMyAxNS4wMDU0TDYuNjYyNjQgMTguNjI2MkwxMC4zMjUzIDE1LjAwNTRMOS4yMjQ4NyAxMy45MTc1TDcuNDQ3IDE1LjY3NTFDNy42MTk3MyAxMS4xNTI1IDExLjM4MjkgNy41Mzg0NiAxNiA3LjUzODQ2WiIgZmlsbD0iIzVCNjU2RCIvPjxwYXRoIGQ9Ik05LjM5NzQ2IDIxLjM4NDZINy40NzVDOS4yNzI1NCAyNC4xNjAyIDEyLjQxOTEgMjYgMTYuMDAwMiAyNkMyMS40ODA1IDI2IDI1Ljk0MjkgMjEuNjkxNiAyNi4xMTA4IDE2LjMxNDFMMjcuODk5NiAxOC4wODI1TDI5IDE2Ljk5NDZMMjUuMzM3NCAxMy4zNzM4TDIxLjY3NDcgMTYuOTk0NkwyMi43NzUxIDE4LjA4MjVMMjQuNTUzMiAxNi4zMjQ3QzI0LjM4MDcgMjAuODQ3NCAyMC42MTc0IDI0LjQ2MTUgMTYuMDAwMiAyNC40NjE1QzEzLjM0MjMgMjQuNDYxNSAxMC45Njc0IDIzLjI2MzkgOS4zOTc0NiAyMS4zODQ2WiIgZmlsbD0iIzVCNjU2RCIvPjwvc3ZnPg==);
+            }
+
+            &:hover {
+                &::after {
+                    background-color: rgba($Main, 0.85);
+                    border: 1px solid rgba($Main, 0.85);;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNy41Mzg0NkMxOC42NTc5IDcuNTM4NDYgMjEuMDMyOSA4LjczNjE1IDIyLjYwMjggMTAuNjE1NEgyNC41MjUyQzIyLjcyNzcgNy44Mzk3NiAxOS41ODEyIDYgMTYgNkMxMC41MTk2IDYgNi4wNTcxOCAxMC4zMDg1IDUuODg5NDggMTUuNjg2MUw0LjEwMDQxIDEzLjkxNzVMMyAxNS4wMDU0TDYuNjYyNjQgMTguNjI2MkwxMC4zMjUzIDE1LjAwNTRMOS4yMjQ4NyAxMy45MTc1TDcuNDQ3IDE1LjY3NTFDNy42MTk3MyAxMS4xNTI1IDExLjM4MjkgNy41Mzg0NiAxNiA3LjUzODQ2WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNOS4zOTc0NiAyMS4zODQ2SDcuNDc1QzkuMjcyNTQgMjQuMTYwMiAxMi40MTkxIDI2IDE2LjAwMDIgMjZDMjEuNDgwNSAyNiAyNS45NDI5IDIxLjY5MTYgMjYuMTEwOCAxNi4zMTQxTDI3Ljg5OTYgMTguMDgyNUwyOSAxNi45OTQ2TDI1LjMzNzQgMTMuMzczOEwyMS42NzQ3IDE2Ljk5NDZMMjIuNzc1MSAxOC4wODI1TDI0LjU1MzIgMTYuMzI0N0MyNC4zODA3IDIwLjg0NzQgMjAuNjE3NCAyNC40NjE1IDE2LjAwMDIgMjQuNDYxNUMxMy4zNDIzIDI0LjQ2MTUgMTAuOTY3NCAyMy4yNjM5IDkuMzk3NDYgMjEuMzg0NloiIGZpbGw9IndoaXRlIi8+PC9zdmc+);
+                }
+            }
+        }
+
+        &:hover {
+            &::after {
+                background-color: rgba($Main, 0.85);
+                border: 1px solid rgba($Main, 0.85);;
+            }
+        }
+    }
+
+    &--front,
+    &--back {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.6s;
+        backface-visibility: hidden;
+        padding: 20px 20px 117px;
+
+        @media only screen and (max-width: 719px) {
+            padding: 20px 20px 102px;
+        }
+    }
+
+    &--front {}
+
+    &--back {
+        transform: rotateY(180deg);
+    }
+}

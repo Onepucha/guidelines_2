@@ -1,0 +1,38 @@
+.splash-block {
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #CACACA;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.grid {
+		margin: 0;
+	}
+
+	&__title {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 100%;
+		height: 100%;
+		h1{
+			width: 100%;
+		}
+
+		@media all and (max-width: 719px) {
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

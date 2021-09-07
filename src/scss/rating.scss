@@ -1,0 +1,132 @@
+/* Rating */
+fieldset {
+    margin: 0;
+}
+
+.rating {
+    padding: 0;
+    border: none;
+}
+
+/* Title */
+.rating__title {
+    font-family: $Regular;
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0;
+}
+
+/* Caption */
+.rating__caption {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+/* Group */
+.rating__group {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 40px;
+    background-image: url(../images/off.svg);
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+}
+
+/* Input */
+.rating__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* Star */
+.rating__star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 40px;
+    cursor: pointer;
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+}
+
+.rating__star:hover,
+.rating__input:checked+.rating__star {
+    background-image: url(../images/on.svg);
+}
+
+.rating__star:hover~.rating__star {
+    background-image: url(../images/off.svg);
+}
+
+/* Options */
+.rating__star:nth-of-type(1) {
+    z-index: 5;
+    width: 40px;
+}
+
+.rating__star:nth-of-type(2) {
+    z-index: 4;
+    width: 80px;
+}
+
+.rating__star:nth-of-type(3) {
+    z-index: 3;
+    width: 120px;
+}
+
+.rating__star:nth-of-type(4) {
+    z-index: 2;
+    width: 160px;
+}
+
+.rating__star:nth-of-type(5) {
+    z-index: 1;
+    width: 200px;
+}
+
+/* Textarea */
+.lmm-input__textarea-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.lmm-input__textarea {
+    position: relative;
+    width: 100%;
+    font-family: $Regular;
+    font-size: $fs16;
+    line-height: $lh24;
+    color: $black;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(91, 101, 109, 0.5);
+    border-radius: 10px;
+    outline: none;
+    overflow: hidden;
+    height: 194px;
+    padding: 15px 25px;
+}
+
+.lmm-input__textarea:focus {
+    border: 1px solid rgba(91, 101, 109, 1);
+}
+
+@media (max-width:719px) {
+    .lmm-input__textarea {
+        font-size: $fs14;
+        line-height: $lh20;
+    }
+
+    .btn__next#feedback-btn {
+        font-size: $fs14;
+        line-height: $lh20;
+    }
+}

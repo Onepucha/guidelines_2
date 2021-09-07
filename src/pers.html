@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'guideline',
+'description': '',
+'keywords': '',
+'favicon': 'images/favicon.ico'
+})
+
+<body>
+    @@include('components/page/_2_header.html')
+    @@include('components/page/_5_nav.html')
+    <main class="main">
+        <div class="mt-blue">&nbsp;</div>
+
+
+        <!-- 1 -->
+        <div class="grid mb-yellow">
+            <div class="row mb-blue dialog">
+                <div class="col-lg-12 col-xs-4">
+                    <div class="pers pers__1--1"></div>
+                </div>
+                <div class="col-lg-10 col-xs-8">
+                    <div class="speech left__bottom">
+                        <div class="text text-m">Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+                            рассмотрим эти модели подробнее.</div><a class="btn btn__download"
+                            href="./images/favicon.ico" target="PromoteFirefoxWindow"
+                            onclick="openRequestedPopup(this.href, this.target); return false;">Скачать</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 hide-xs">&nbsp;</div>
+            </div>
+            <hr class="hr hr-gray">
+        </div>
+        <div class="grid mb-yellow">
+            <div class="row mb-blue dialog reverse">
+                <div class="col-lg-12 col-xs-4">
+                    <div class="pers pers__1--1 reverse"></div>
+                </div>
+                <div class="col-lg-10 col-xs-8">
+                    <div class="speech right__bottom">
+                        <div class="text text-m">Скачай документ и ознакомься с модельным рядом квадрокоптеров. Далее мы
+                            рассмотрим эти модели подробнее.</div><a class="btn btn__download"
+                            href="./images/favicon.ico" target="PromoteFirefoxWindow"
+                            onclick="openRequestedPopup(this.href, this.target); return false;">Скачать</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 hide-xs">&nbsp;</div>
+            </div>
+            <hr class="hr hr-gray">
+        </div>
+    </main>
+    @@include('components/page/_3_footer.html')
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.blockquote {
+    background-color: $pale;
+    border-radius: 10px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-family: $Regular;
+
+    &.choose {
+        &__content {
+            padding: 10px 15px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding: 15px;
+        word-wrap: anywhere;
+
+        &.choose {
+                padding: 10px 15px;
+        }
+
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $Main;
+        fill: $Main;
+        height: auto;
+        flex-shrink: 0;
+        font-size: 3em;
+        margin: 0 0 0 15px;
+        padding: 25px 0;
+
+        &.last {
+            margin: 0 15px 0 0;
+        }
+    }
+
+    &__title {
+        display: block;
+        font-family: $Bold;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: $fs14;
+        line-height: $lh20;
+
+        @media (max-width: 719px) {
+            font-size: $fs12;
+            line-height: $lh16;
+        }
+    }
+
+    &--green {
+        border-left-color: $green;
+        background: rgba($green, 0.10);
+    }
+}

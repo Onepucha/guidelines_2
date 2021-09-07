@@ -1,0 +1,58 @@
+.pers {
+    position: relative;
+    height: 386px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 450px 386px;
+
+    &__1{
+        &--1{
+            background-image: url(../images/pers/1/pers__1--1.png);
+
+            @media (max-width: 719px) {
+                width: 105px;
+                height: 137px;
+                background-size: 105px 137px;
+                background-image: url(../images/pers/circle/pers-circle__1--1.png);
+            }
+
+            &.reverse {
+                background-image: url(../images/pers/1/pers__1--1-reverse.png);
+
+                @media (max-width: 719px) {
+                    width: 105px;
+                    height: 137px;
+                    background-size: 105px 137px;
+                    background-image: url(../images/pers/circle/pers-circle__1--1-reverse.png);
+                }
+            }
+        }
+    }
+
+    &__circle {
+        position: relative;
+        
+        img {
+            width: 105px;
+            height: 137px;
+
+            @media (max-width: 719px) {
+                width: 36px;
+                height: 47px;
+            }  
+        }
+    }
+}
+
+// .pers__circle {
+//     display: flex;
+//     justify-content: center;
+//     margin: 0 auto;
+//     height: 130px;
+//     width: 130px;
+
+//     @media (max-width: 719px) {
+//         margin: 0;
+//     }
+// }

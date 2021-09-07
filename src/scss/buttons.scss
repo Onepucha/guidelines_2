@@ -1,0 +1,455 @@
+span.ripple {
+	position: absolute;
+	/* The absolute position we mentioned earlier */
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple 600ms linear;
+	background-color: rgba($white, 0.85);
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
+}
+
+.btn {
+	// transition: all .3s;
+
+	font-family: $Regular;
+
+	& + & {
+		margin-left: 10px;
+	}
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__primary {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			position: relative;
+			overflow: hidden;
+			transition: background 400ms;
+			display: inline-block;
+			width: auto;
+			border: none;
+			border-radius: 8px;
+			border: 1px solid $Main;
+			white-space: nowrap;
+			vertical-align: middle;
+			outline: none;
+			text-decoration: none;
+			background: $Main;
+			color: $white;
+
+			&.large,
+			&.splash {
+				padding: 13px 45px;
+				font-size: $fs16;
+				line-height: $lh32;
+
+				@media only screen and (max-width: 719px) {
+					padding: 12px 22px;
+					font-size: $fs12;
+					line-height: $lh17;
+				}
+			}
+
+			&.splash {
+				font-size: $fs18;
+				line-height: $lh26;
+				position: absolute;
+				bottom: 60px;
+
+				@media only screen and (max-width: 719px) {
+					position: relative;
+					width: 100%;
+					bottom: auto;
+					padding: 18px 45px;
+					font-size: $fs16;
+					line-height: $lh24;
+					margin-top: 40px;
+					margin-bottom: 50px;
+
+					svg {
+						margin-left: 120px;
+					}
+				}
+			}
+
+			&.medium {
+				padding: 20px 35px;
+				font-size: $fs14;
+				line-height: $lh21;
+			}
+
+			&.small {
+				padding: 12px 22px;
+				font-size: $fs12;
+				line-height: $lh17;
+			}
+
+			svg {
+				margin-left: 10px;
+				transition: transform .3s;
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+			background: transparent;
+			background-color: rgba($Main, 0.85);
+			color: $white;
+
+			svg {
+				transform: translateX(5px);
+
+				&.reload {
+					transform: translateX(0px);
+					transform: rotate(90deg);
+				}
+
+				path {
+					// fill: red;
+				}
+			}
+		}
+	}
+
+	&__default {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			position: relative;
+			overflow: hidden;
+			transition: border 400ms;
+			display: inline-block;
+			width: auto;
+			border: none;
+			border-radius: 8px;
+			white-space: nowrap;
+			vertical-align: middle;
+			outline: none;
+			background: transparent;
+			border: 1px solid transparent;
+			color: $black;
+			border-color: rgba($black, 0.20);
+
+			&.large {
+				padding: 13px 45px;
+				font-size: $fs16;
+				line-height: $lh32;
+
+				@media only screen and (max-width: 719px) {
+					padding: 12px 22px;
+					font-size: $fs12;
+					line-height: $lh17;
+				}
+			}
+
+			&.medium {
+				padding: 20px 35px;
+				font-size: $fs14;
+				line-height: $lh21;
+			}
+
+			&.small {
+				padding: 12px 22px;
+				font-size: $fs12;
+				line-height: $lh17;
+			}
+
+			svg {
+				margin-left: 10px;
+				transition: transform .3s;
+
+				path {
+					fill: $black;
+				}
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+			background: transparent;
+			border-color: $black;
+
+			svg {
+				transform: rotate(90deg);
+
+				path {
+					// fill: red;
+				}
+			}
+		}
+	}
+
+	&__outline {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			display: inline-block;
+			width: auto;
+			white-space: nowrap;
+			vertical-align: middle;
+			outline: none;
+			text-decoration: none;
+			background-color: transparent;
+			border: 1px solid transparent;
+			border-radius: 10px;
+			color: $Main;
+			border-color: rgba($Main, .2);
+
+			&.large {
+				padding: 28px 40px;
+				font-size: $fs16;
+				line-height: $lh24;
+
+				@media only screen and (max-width: 719px) {
+					padding: 12px 22px;
+					font-size: $fs12;
+					line-height: $lh17;
+				}
+			}
+
+			&.medium {
+				padding: 20px 35px;
+				font-size: $fs14;
+				line-height: $lh21;
+			}
+
+			&.small {
+				padding: 12px 22px;
+				font-size: $fs12;
+				line-height: $lh17;
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+			border-color: $Main;
+		}
+	}
+
+	&__download {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			display: inline-block;
+			width: auto;
+			white-space: nowrap;
+			vertical-align: middle;
+			outline: none;
+			text-decoration: none;
+			background-color: $white;
+			transition: background 400ms;
+			color: $Main !important;
+			border-radius: 10px;
+			padding: 10px 25px;
+			font-size: $fs14;
+			line-height: $lh20;
+		}
+
+		&:hover {
+			text-decoration: none;
+			background: transparent;
+			background-color: rgba($white, 0.85);
+		}
+	}
+
+	&__prev {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			position: fixed;
+			bottom: 5px;
+			width: 100%;
+			height: 61px;
+			z-index: 55;
+			display: inline-block;
+			white-space: nowrap;
+			vertical-align: middle;
+			outline: none;
+			text-decoration: none;
+			background-color: $white;
+			color: $Main;
+			border: 1px solid rgba($black, 0.20);
+			border-bottom: none;
+			border-radius: 15px 15px 0px 0px;
+			padding: 14px 0;
+			font-size: $fs18;
+			line-height: $lh26;
+		}
+
+
+		&:hover {
+			text-decoration: none;
+			border-color: $Main;
+
+			svg {
+				transition: all .3s;
+
+				path {
+					fill: $Main;
+				}
+			}
+		}
+
+		&.bottom {
+			bottom: 1px;
+			position: relative;
+		}
+	}
+
+	&__next {
+		&:not(:disabled):not(.disabled) {
+			cursor: pointer;
+		}
+
+		&,
+		&:visited,
+		&:focus,
+		&:active {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			white-space: nowrap;
+			outline: none;
+			text-decoration: none;
+			background-color: $Main;
+			color: $white;
+			border: 1px solid rgba($Main, 100);
+			border-bottom: none;
+			border-radius: 15px 15px 0px 0px;
+			padding: 14px 0;
+			font-family: $Bold;
+			font-size: $fs18;
+			line-height: $lh26;
+			transition: background 400ms;
+		}
+
+		svg {
+			margin-left: 25px;
+			transition: transform .3s;
+		}
+
+		&:hover {
+			text-decoration: none;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), $Main;
+
+			svg {
+				transform: translateX(5px);
+
+				path {
+					// fill: red;
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			left: 0;
+			bottom: 0;
+			width: calc(100% + 30px);
+    		margin-left: -15px;
+			height: 1px;
+			background: rgba($black, 0.20);
+
+			@media (max-width: 719px) {
+				width: calc(100% + 15px);
+				margin-left: -7.5px;
+			}
+		}
+	}
+
+	&__round {
+		border-radius: 40px;
+	}
+
+	&__block {
+		display: block;
+		width: 100%;
+	}
+
+	&__block--xs {
+		@media (max-width: 719px) {
+			display: block;
+			width: 100% !important;
+		}
+	}
+
+	&__block--xs + &__block--xs {
+		@media (max-width: 719px) {
+			margin-left: 0px;
+			margin-top: 10px;
+		}
+	}
+
+	&__center {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&>i,
+	&>span {
+		display: inline-block;
+		pointer-events: none;
+	}
+
+	&>.icon+span {
+		margin-left: 8px;
+	}
+
+	&.disabled {
+		color: rgba($black, 0.75);
+		background-color: rgba($black, 0.75);
+		border-color: rgba($black, 0.75);
+		text-shadow: none;
+		box-shadow: none;
+	}
+}
+
+.results {
+	.btn__bottom > div > button {
+		width: auto;
+		padding: 14px 50px;
+	}
+}
